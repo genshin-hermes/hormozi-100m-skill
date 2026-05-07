@@ -469,7 +469,7 @@ You can use this skill standalone:
 
 ## License
 
-MIT — Use freely. Give credit to Hormozi for the frameworks.
+Apache-2.0 — Use freely. Give credit to Hormozi for the frameworks. See [LICENSE](LICENSE) for full terms.
 
 ---
 
