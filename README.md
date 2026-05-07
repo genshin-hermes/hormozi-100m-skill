@@ -378,6 +378,77 @@ This skill was built by extracting frameworks from the complete 100M book series
 
 ---
 
+## Troubleshooting
+
+### "python3: command not found"
+Install Python 3:
+```bash
+# Ubuntu/Debian
+sudo apt-get install python3
+
+# macOS
+brew install python3
+
+# Windows
+# Download from python.org
+```
+
+### "apply-framework.py: permission denied"
+Make the script executable:
+```bash
+chmod +x scripts/apply-framework.py
+```
+
+Or run with Python explicitly:
+```bash
+python3 scripts/apply-framework.py offer "your context here"
+```
+
+### "Unknown framework: xyz"
+Check the supported frameworks list:
+```bash
+python3 scripts/apply-framework.py
+```
+
+Supported frameworks: `offer`, `money-model`, `hook`, `ad`, `scaling`, `pricing`, `retention`, `branding`, `lifetime-value`, `lead-nurture`, `fast-cash`
+
+### ZIP file won't extract
+Make sure you have `unzip` installed:
+```bash
+# Ubuntu/Debian
+sudo apt-get install unzip
+
+# macOS (built-in)
+# Windows (built-in in File Explorer)
+```
+
+Then extract:
+```bash
+unzip hormozi-100m-frameworks.zip -d ~/.hermes/skills/hormozi-100m-frameworks
+```
+
+### Skill not loading in Hermes Agent
+1. Check the skill is in the correct directory:
+   ```bash
+   ls ~/.hermes/skills/hormozi-100m-frameworks/SKILL.md
+   ```
+2. Restart your Hermes Agent session
+3. Verify the skill YAML frontmatter is valid (first 12 lines of `SKILL.md`)
+
+### Missing a specific framework?
+This skill covers the 12 core frameworks. If you need a specific sub-framework:
+1. Check `SKILL.md` — many sub-frameworks are embedded within the main sections
+2. Check `references/framework-index.json` for the full list of 47 extracted frameworks
+3. Open an issue on GitHub with the specific framework name and source book
+
+### Want to use this without Hermes Agent?
+You can use this skill standalone:
+- Read `SKILL.md` as a reference document
+- Use `scripts/apply-framework.py` as a CLI tool
+- Use templates in `templates/` as markdown worksheets
+
+---
+
 ## Version History
 
 | Version | Date | Changes |

@@ -1,0 +1,34 @@
+name: Build Release ZIP
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create ZIP archive
+        run: |
+          zip -r hormozi-100m-frameworks.zip \
+            SKILL.md \
+            README.md \
+            scripts/ \
+            templates/ \
+            references/ \
+            -x "*.git*" \
+            -x "*.github*"
+
+      - name: Upload ZIP to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./hormozi-100m-frameworks.zip
+          asset_name: hormozi-100m-frameworks.zip
+          asset_content_type: application/zip
