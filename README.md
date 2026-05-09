@@ -471,8 +471,8 @@ You can use this skill standalone:
 
 ## Credits
 
-- **Frameworks:** Alex Hormozi — [hormozi.com](https://hormozi.com)
-- **Skill Author:** Ziwad
+- **Frameworks:** Alex Hormozi — [acq.com](https://acq.com)
+- **Skill Author:** gnti.tech
 - **Extraction Method:** Python-based text analysis + manual curation
 - **Source Material:** 13 books, ~1.2M characters
 
