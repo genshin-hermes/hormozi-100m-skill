@@ -131,6 +131,17 @@ cp -r hormozi-100m-frameworks ~/.hermes/skills/
 
 ---
 
+
+### Option 4: Install via skills.sh (Vercel)
+
+You can also install this skill using Vercel's skills.sh ecosystem:
+
+```bash
+npx skills install hormozi-100m-skill
+```
+
+This makes the skill available to any AI agent that supports the skills.sh format.
+
 ## Quick Start
 
 ### As a Human User

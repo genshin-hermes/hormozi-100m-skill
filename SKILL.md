@@ -863,6 +863,19 @@ hormozi-100m-frameworks/
     └── apply-framework.py                # CLI tool (no dependencies)
 ```
 
+
+### skills.sh Compatibility
+
+This skill is also compatible with Vercel's skills.sh ecosystem. You can install it using:
+
+```bash
+npx skills install hormozi-100m-skill
+```
+
+Once installed via skills.sh, the skill will be available to any AI agent that supports the skills.sh format.
+
+Note: When installed via skills.sh, the skill ID is `hormozi-100m-skill` but the internal name remains `hormozi-100m-frameworks` for backward compatibility.
+
 ## For AI Agents: How to Use This Skill
 
 When a user asks for business/marketing help, **load this skill first** then follow this protocol:
