@@ -472,7 +472,7 @@ You can use this skill standalone:
 ## Credits
 
 - **Frameworks:** Alex Hormozi — [acq.com](https://acq.com)
-- **Skill Author:** gnti.tech
+- **Skill Author:** alexa
 - **Extraction Method:** Python-based text analysis + manual curation
 - **Source Material:** 13 books, ~1.2M characters
 

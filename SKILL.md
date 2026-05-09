@@ -2,7 +2,7 @@
 name: hormozi-100m-frameworks
 description: "Apply Alex Hormozi's $100M business frameworks — offers, leads, money models, scaling, branding, ads, hooks, pricing, retention, and fast cash — to any business situation. Extracted from the complete 100M book series."
 version: 2.0.0
-author: gnti.tech
+author: alexa
 license: Apache-2.0
 metadata:
   hermes:
