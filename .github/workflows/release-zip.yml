@@ -7,6 +7,10 @@ on:
 
 jobs:
   build:
+  build:
+    permissions:
+      contents: read
+      releases: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
